@@ -28,6 +28,11 @@
         &:focus:invalid {
             border-bottom: 3px solid $color-primary;
         }
+
+        @include respond(tab-port) {
+            width: 100%;
+            // margin-bottom: 2.5rem;
+        }
     }
     &__label {
         font-size: 1.2rem;
@@ -46,6 +51,10 @@
     &__radio-group {
         width: 45%;
         display: inline-block;
+        @include respond(tab-port) {
+            width: 100%;
+            margin-bottom: 2.5rem;
+        }
     }
     &__radio-label {
         font-size: 1.5rem;
