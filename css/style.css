@@ -63,6 +63,33 @@ Base+typography > general layout + grid > page layouts > components
   padding: 0;
   box-sizing: inherit; }
 
+::-moz-selection {
+  /* Code for Firefox */
+  color: #fff;
+  background: #ff7730; }
+
+::selection {
+  color: #fff;
+  background: #ff9900; }
+
+/* width */
+::-webkit-scrollbar {
+  width: 12.5px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #ff9900; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff7730; }
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth; }

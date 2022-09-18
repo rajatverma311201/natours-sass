@@ -6,6 +6,39 @@
     box-sizing: inherit;
 }
 
+::-moz-selection {
+    /* Code for Firefox */
+    color: $color-white;
+    background: $color-primary-dark;
+}
+
+::selection {
+    color: $color-white;
+    background: $color-primary;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 12.5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: $color-primary;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $color-primary-dark;
+}
+
 html {
     // by default 1rem = 16px
     // This defines what 1rem is
