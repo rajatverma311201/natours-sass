@@ -16,18 +16,34 @@
         box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
         cursor: pointer;
         text-align: center;
+        @include respond(tab-port) {
+            top: 4rem;
+            right: 4rem;
+        }
+        @include respond(phone) {
+            top: 3rem;
+            right: 3rem;
+        }
     }
     &__background {
-        height: 5rem;
-        width: 5rem;
+        height: 2rem;
+        width: 2rem;
         border-radius: 50%;
         position: fixed;
-        top: 6rem;
-        right: 6rem;
+        top: 6.5rem;
+        right: 6.5rem;
         background-image: radial-gradient($color-primary-light, $color-primary);
         z-index: 1000;
         // transform: scale(50);
         transition: transform 0.7s cubic-bezier(0.83, 0, 0.17, 1);
+        @include respond(tab-port) {
+            top: 5rem;
+            right: 5rem;
+        }
+        @include respond(phone) {
+            top: 4rem;
+            right: 4rem;
+        }
     }
     &__nav {
         height: 100vh;

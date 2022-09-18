@@ -3,9 +3,16 @@
     background-color: $color-grey-dark-3;
     padding: 10rem 0;
     font-size: 1.4rem;
+
+    @include respond(tab-land) {
+        padding: 8rem 0;
+    }
     &__logo-box {
         text-align: center;
         margin-bottom: 8rem;
+        @include respond(tab-land) {
+            margin-bottom: 4rem;
+        }
     }
     &__logo {
         width: 15rem;
@@ -15,6 +22,10 @@
         border-top: 1px solid $color-grey-dark;
         padding-top: 2rem;
         display: inline-block;
+        @include respond(tab-land) {
+            width: 100%;
+            text-align: center;
+        }
     }
     &__list {
         list-style: none;
@@ -22,7 +33,7 @@
     &__item {
         display: inline-block;
         &:not(:last-child) {
-            margin: 0.75rem;
+            margin: 0.5rem;
         }
     }
     &__link {
@@ -49,5 +60,11 @@
         padding-top: 2rem;
         width: 80%;
         float: right;
+
+        @include respond(tab-land) {
+            width: 100%;
+            float: none;
+            text-align: center;
+        }
     }
 }
