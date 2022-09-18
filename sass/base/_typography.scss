@@ -10,6 +10,8 @@ body {
 .heading-primary {
     color: $color-white;
     text-transform: uppercase;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     margin-bottom: 6rem;
 
