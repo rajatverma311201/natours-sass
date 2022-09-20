@@ -172,6 +172,11 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
+.link-github {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #ff9900; }
+
 .u-center-text {
   text-align: center; }
 
